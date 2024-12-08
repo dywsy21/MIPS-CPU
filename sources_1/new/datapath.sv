@@ -35,5 +35,4 @@ module datapath(
     mux3 srcbmux(writedata, signimm, zeroimm, alusrc, srcb);
     alu alu1(srca, srcb, alucontrol, aluout, zero);
 
-
 endmodule

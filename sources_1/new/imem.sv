@@ -9,12 +9,13 @@ module imem(
 
     initial begin
         // $readmemh("memfile.dat", RAM);
-        $readmemh("test_new_instrs.dat", RAM);
+        // $readmemh("test_new_instrs.dat", RAM);
         // $readmemh("test_fail.dat", RAM);
         // $readmemh("test_andi.dat", RAM);
         // $readmemh("test_ori.dat", RAM);
         // $readmemh("test_bne.dat", RAM);
         // $readmemh("test_beq.dat", RAM);
+        $readmemh("io.dat", RAM);
     end
 
     assign rd = RAM[a];
